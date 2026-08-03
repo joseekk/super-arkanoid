@@ -1,0 +1,13 @@
+extends CharacterBody2D
+
+@export var y_speed = -250
+@export var angle = [-250, 250]
+
+func _physics_process(delta):
+	if Input.is_action_pressed("start") and !GameManager.started:
+		play_game()
+	move_and_collide(velocity*delta)
+
+func play_game():
+	GameManager.started = true
+	velocity = Vector2(angle.pick_random(), y_speed)

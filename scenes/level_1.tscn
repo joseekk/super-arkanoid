@@ -1,0 +1,312 @@
+[gd_scene format=3 uid="uid://c46bve84g2v7v"]
+
+[ext_resource type="PackedScene" uid="uid://bvadfg7qtvlap" path="res://scenes/enviroment.tscn" id="1_5xbjy"]
+[ext_resource type="PackedScene" uid="uid://cp8dtwfdki8yx" path="res://scenes/player.tscn" id="2_4nkto"]
+[ext_resource type="PackedScene" uid="uid://cgcoumllvd110" path="res://scenes/ball.tscn" id="3_fcfvj"]
+[ext_resource type="PackedScene" uid="uid://co1jhbsbvvq7w" path="res://scenes/block.tscn" id="4_pa8r4"]
+[ext_resource type="Texture2D" uid="uid://c74upwkiabsej" path="res://sprites/RedBlock.png" id="5_e3sih"]
+[ext_resource type="Texture2D" uid="uid://ccg3uv2318kgx" path="res://sprites/PurpleBlock.png" id="6_2y5yt"]
+[ext_resource type="Texture2D" uid="uid://b7dck7slhfg1p" path="res://sprites/GreenBlock.png" id="7_2os1m"]
+[ext_resource type="Texture2D" uid="uid://n2vm675on7oq" path="res://sprites/BlueBlock.png" id="8_go7sj"]
+[ext_resource type="Texture2D" uid="uid://dvedv87gdpuyc" path="res://sprites/YellowBlock.png" id="9_7gny6"]
+
+[node name="Node2D" type="Node2D" unique_id=590801831]
+
+[node name="Enviroment" parent="." unique_id=1452577883 instance=ExtResource("1_5xbjy")]
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="." unique_id=2133298719 instance=ExtResource("2_4nkto")]
+position = Vector2(320, 456)
+
+[node name="Ball" parent="." unique_id=1690272130 instance=ExtResource("3_fcfvj")]
+position = Vector2(320, 428)
+
+[node name="Red" type="Node2D" parent="." unique_id=1924974414]
+
+[node name="Block" parent="Red" unique_id=856157194 instance=ExtResource("4_pa8r4")]
+position = Vector2(0, 144)
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block" unique_id=1676565937]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block2" parent="Red" unique_id=310945392 instance=ExtResource("4_pa8r4")]
+position = Vector2(80, 144)
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block2" unique_id=2130410749]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block3" parent="Red" unique_id=77267119 instance=ExtResource("4_pa8r4")]
+position = Vector2(160, 144)
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block3" unique_id=507261704]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block4" parent="Red" unique_id=719558962 instance=ExtResource("4_pa8r4")]
+position = Vector2(240, 144)
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block4" unique_id=215654482]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block5" parent="Red" unique_id=1870057449 instance=ExtResource("4_pa8r4")]
+position = Vector2(320, 144)
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block5" unique_id=1807649041]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block6" parent="Red" unique_id=1577019447 instance=ExtResource("4_pa8r4")]
+position = Vector2(400, 144)
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block6" unique_id=1640145590]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block7" parent="Red" unique_id=1681265285 instance=ExtResource("4_pa8r4")]
+position = Vector2(480, 144)
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block7" unique_id=257348197]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block8" parent="Red" unique_id=561567850 instance=ExtResource("4_pa8r4")]
+position = Vector2(560, 144)
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block8" unique_id=1978905908]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Purple" type="Node2D" parent="." unique_id=1368582745]
+
+[node name="Block9" parent="Purple" unique_id=906932987 instance=ExtResource("4_pa8r4")]
+position = Vector2(560, 120)
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block9" unique_id=1371147842]
+texture = ExtResource("6_2y5yt")
+centered = false
+
+[node name="Block10" parent="Purple" unique_id=717610186 instance=ExtResource("4_pa8r4")]
+position = Vector2(480, 120)
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block10" unique_id=1495931222]
+texture = ExtResource("6_2y5yt")
+centered = false
+
+[node name="Block11" parent="Purple" unique_id=323025619 instance=ExtResource("4_pa8r4")]
+position = Vector2(400, 120)
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block11" unique_id=1271183895]
+texture = ExtResource("6_2y5yt")
+centered = false
+
+[node name="Block12" parent="Purple" unique_id=2014945667 instance=ExtResource("4_pa8r4")]
+position = Vector2(320, 120)
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block12" unique_id=277378960]
+texture = ExtResource("6_2y5yt")
+centered = false
+
+[node name="Block13" parent="Purple" unique_id=629692238 instance=ExtResource("4_pa8r4")]
+position = Vector2(240, 120)
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block13" unique_id=1811440725]
+texture = ExtResource("6_2y5yt")
+centered = false
+
+[node name="Block14" parent="Purple" unique_id=1373741341 instance=ExtResource("4_pa8r4")]
+position = Vector2(160, 120)
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block14" unique_id=1023866607]
+texture = ExtResource("6_2y5yt")
+centered = false
+
+[node name="Block15" parent="Purple" unique_id=637443728 instance=ExtResource("4_pa8r4")]
+position = Vector2(80, 120)
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block15" unique_id=853725473]
+texture = ExtResource("6_2y5yt")
+centered = false
+
+[node name="Block16" parent="Purple" unique_id=759180060 instance=ExtResource("4_pa8r4")]
+position = Vector2(0, 120)
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block16" unique_id=1835435424]
+texture = ExtResource("6_2y5yt")
+centered = false
+
+[node name="Green" type="Node2D" parent="." unique_id=2141345560]
+
+[node name="Block17" parent="Green" unique_id=1112671439 instance=ExtResource("4_pa8r4")]
+position = Vector2(0, 96)
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block17" unique_id=1988314724]
+texture = ExtResource("7_2os1m")
+centered = false
+
+[node name="Block18" parent="Green" unique_id=46864287 instance=ExtResource("4_pa8r4")]
+position = Vector2(80, 96)
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block18" unique_id=1618780348]
+texture = ExtResource("7_2os1m")
+centered = false
+
+[node name="Block19" parent="Green" unique_id=1712710899 instance=ExtResource("4_pa8r4")]
+position = Vector2(160, 96)
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block19" unique_id=1203090760]
+texture = ExtResource("7_2os1m")
+centered = false
+
+[node name="Block20" parent="Green" unique_id=1778296759 instance=ExtResource("4_pa8r4")]
+position = Vector2(240, 96)
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block20" unique_id=570080871]
+texture = ExtResource("7_2os1m")
+centered = false
+
+[node name="Block21" parent="Green" unique_id=519598175 instance=ExtResource("4_pa8r4")]
+position = Vector2(320, 96)
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block21" unique_id=1640847420]
+texture = ExtResource("7_2os1m")
+centered = false
+
+[node name="Block22" parent="Green" unique_id=546350595 instance=ExtResource("4_pa8r4")]
+position = Vector2(400, 96)
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block22" unique_id=1780137013]
+texture = ExtResource("7_2os1m")
+centered = false
+
+[node name="Block23" parent="Green" unique_id=1179255982 instance=ExtResource("4_pa8r4")]
+position = Vector2(480, 96)
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block23" unique_id=1451626996]
+texture = ExtResource("7_2os1m")
+centered = false
+
+[node name="Block24" parent="Green" unique_id=822079337 instance=ExtResource("4_pa8r4")]
+position = Vector2(560, 96)
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block24" unique_id=192646772]
+texture = ExtResource("7_2os1m")
+centered = false
+
+[node name="Blue" type="Node2D" parent="." unique_id=582382450]
+
+[node name="Block25" parent="Blue" unique_id=641797539 instance=ExtResource("4_pa8r4")]
+position = Vector2(560, 72)
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block25" unique_id=1425852164]
+texture = ExtResource("8_go7sj")
+centered = false
+
+[node name="Block26" parent="Blue" unique_id=619252054 instance=ExtResource("4_pa8r4")]
+position = Vector2(480, 72)
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block26" unique_id=1838280100]
+texture = ExtResource("8_go7sj")
+centered = false
+
+[node name="Block27" parent="Blue" unique_id=1257245687 instance=ExtResource("4_pa8r4")]
+position = Vector2(400, 72)
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block27" unique_id=1000841356]
+texture = ExtResource("8_go7sj")
+centered = false
+
+[node name="Block28" parent="Blue" unique_id=1861604714 instance=ExtResource("4_pa8r4")]
+position = Vector2(320, 72)
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block28" unique_id=95783497]
+texture = ExtResource("8_go7sj")
+centered = false
+
+[node name="Block29" parent="Blue" unique_id=1280325146 instance=ExtResource("4_pa8r4")]
+position = Vector2(240, 72)
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block29" unique_id=1482426529]
+texture = ExtResource("8_go7sj")
+centered = false
+
+[node name="Block30" parent="Blue" unique_id=1948393122 instance=ExtResource("4_pa8r4")]
+position = Vector2(160, 72)
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block30" unique_id=1614334624]
+texture = ExtResource("8_go7sj")
+centered = false
+
+[node name="Block31" parent="Blue" unique_id=837246453 instance=ExtResource("4_pa8r4")]
+position = Vector2(80, 72)
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block31" unique_id=1712656461]
+texture = ExtResource("8_go7sj")
+centered = false
+
+[node name="Block32" parent="Blue" unique_id=227937148 instance=ExtResource("4_pa8r4")]
+position = Vector2(0, 72)
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block32" unique_id=464430861]
+texture = ExtResource("8_go7sj")
+centered = false
+
+[node name="Yellow" type="Node2D" parent="." unique_id=1482400781]
+
+[node name="Block33" parent="Yellow" unique_id=350138011 instance=ExtResource("4_pa8r4")]
+position = Vector2(0, 48)
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block33" unique_id=665166286]
+texture = ExtResource("9_7gny6")
+centered = false
+
+[node name="Block34" parent="Yellow" unique_id=2111278524 instance=ExtResource("4_pa8r4")]
+position = Vector2(80, 48)
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block34" unique_id=840489881]
+texture = ExtResource("9_7gny6")
+centered = false
+
+[node name="Block35" parent="Yellow" unique_id=1591006822 instance=ExtResource("4_pa8r4")]
+position = Vector2(160, 48)
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block35" unique_id=1664024878]
+texture = ExtResource("9_7gny6")
+centered = false
+
+[node name="Block36" parent="Yellow" unique_id=606423965 instance=ExtResource("4_pa8r4")]
+position = Vector2(240, 48)
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block36" unique_id=1027944506]
+texture = ExtResource("9_7gny6")
+centered = false
+
+[node name="Block37" parent="Yellow" unique_id=1538832745 instance=ExtResource("4_pa8r4")]
+position = Vector2(320, 48)
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block37" unique_id=1880447482]
+texture = ExtResource("9_7gny6")
+centered = false
+
+[node name="Block38" parent="Yellow" unique_id=1608471868 instance=ExtResource("4_pa8r4")]
+position = Vector2(400, 48)
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block38" unique_id=315458078]
+texture = ExtResource("9_7gny6")
+centered = false
+
+[node name="Block39" parent="Yellow" unique_id=1121534556 instance=ExtResource("4_pa8r4")]
+position = Vector2(480, 48)
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block39" unique_id=1553207290]
+texture = ExtResource("9_7gny6")
+centered = false
+
+[node name="Block40" parent="Yellow" unique_id=634719923 instance=ExtResource("4_pa8r4")]
+position = Vector2(560, 48)
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block40" unique_id=164572870]
+texture = ExtResource("9_7gny6")
+centered = false
